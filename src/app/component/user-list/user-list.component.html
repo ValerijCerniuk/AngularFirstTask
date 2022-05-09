@@ -1,0 +1,29 @@
+<h3>Vartotoju sarasas</h3>
+<div class="user-list-holder row align-items-center">
+    <div class="left side col">
+        <div>
+            <ul class="users">
+                <li *ngFor="let user of userList">
+                    <button [class.selected]="user === selectedUser" type="button" (click)="onSelect(user)">
+                        <span >{{user.first_name}} </span>
+                        <span > {{user.last_name}}</span>
+                    </button> 
+                </li>
+                <div *ngIf="selectedUser">
+                    <h2>{{selectedUser?.first_name | uppercase}} Details</h2>
+                    <div>Age: {{selectedUser?.age}}</div>
+                    <div>Email: {{selectedUser?.email}}</div>
+                    <div>
+                        <label for="user-email">Edit email: </label>
+                        <input id="user-email" [(ngModel)]="selectedUser.email" placeholder="name">
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="right side col">
+        <div class="centered">
+            <img src="src/assets/photo.jpg" alt="user photo " class="img-fluid rounded float-end">
+        </div>
+    </div>
+</div>

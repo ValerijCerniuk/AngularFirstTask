@@ -1,0 +1,11 @@
+#botom{
+    background-color: aquamarine;
+    opacity: 0.5;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0px;
+    right: 0px;
+}

@@ -1,0 +1,9 @@
+<h3>Whats is your name?</h3>
+<p><input type="text" id="username" name="userName" [(ngModel)]="userName"></p>
+
+<div *ngIf="userName.length > 5; else elseBlock">
+    <h1> Sveikas {{userName}}</h1>
+</div>
+<ng-template #elseBlock>Iveskit daugiau nei 5 raides.</ng-template>
+
+

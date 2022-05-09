@@ -1,0 +1,50 @@
+
+    <h3>Uzduotkit savo klausima</h3>
+
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">Vardas</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Jusu vardas..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Pavarde</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Jusu pavarde..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Miestas</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country">
+                        <option value="vilnius">Vilnius</option>
+                        <option value="kaunas">Kaunas</option>
+                        <option value="kliapeda">Klaipeda</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Klausimas</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Jusu klausimas.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+
